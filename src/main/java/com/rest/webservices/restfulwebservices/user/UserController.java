@@ -20,7 +20,7 @@ public class UserController {
     @Autowired
     private UserDAOService userDAOService;
 
-    @GetMapping("/all")
+    @GetMapping("/users")
     public List<User> retrieveAllUsers(){
         return userDAOService.findAll();
     }
